@@ -1,5 +1,5 @@
 # References
-## *Deep Learning with Pytorch* textbook
+## *Deep Learning with PyTorch* textbook
 <img src="../other_images/pytorch_book.jpg" alt="Pytorch Book" width="300"/>
 
 ### Citation
