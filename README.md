@@ -13,7 +13,8 @@ Nice header image:
     - [Data cleaning](#data-cleaning)
     - [Data processing](#data-processing)
 - [Model](#model)
-    - [Name_this_section](#name_this_section)
+    - [Original two-input convolutional neural network](#Original-two-input-convolutional-neural-network)
+    - [ResNet50](#ResNet50)
 - [Results](#results)
     - [Name_this_section](#name_this_section)
 
@@ -29,17 +30,20 @@ The training, validation, and test datasets were created using the ???WHATE NOTE
 - Each pair of competitors added *two* datapoints for each competitor pair, with the order of the competitors as competitor 0 or 1 reversed. This was to prevent the network's two image recognition parts from learning features of different competitors.
 - If two competitors had the same ranking (eg. two competitors with ranking 16 or one competitor paired against himself) then the datapoint was thrown out.
 
-We divided the data into [training](./data/df_train.pkl), [validation](./data/df_val.pkl), and [test](./data/df_test.pkl) sets, with a split of ???SPLIT OF WHAT???. To keep the integrity of our validation and test sets, we kept competitions intact and ensured no competitor appeared in more than one of the three sets.
+We divided the data into [training](./data/df_train.pkl), [validation](./data/df_val.pkl), and [test](./data/df_test.pkl) sets, with a split of ???SPLIT OF WHAT???. The training set consisted of 11,776 image pairs with one-hot-coded labels. To keep the integrity of our validation and test sets, we kept competitions intact and ensured no competitor appeared in more than one of the three sets.
 
 ### Data processing
 The photos, originally 600x900, were transformed to 128x128 using `torchvision.transforms.Resize()`.
 
 ## Model
 -----------------------------------------
-Add text
+We employed two different models, an original two-input convolutional neural network and ResNet50.
 
-### Name this section
-Add text
+### Original two-input convolutional neural network
+We tried a hand-written model called TwoInput Net, which consists of three Conv2d() layers with ReLu() and MaxPool2d() functions between them. For every competition in the training set, we gave the model all pairs of pictures that had different rankings and a one-hot-coded variable indicating which picture was the winner. We optimized using the BCELoss() function.
+
+### ResNet50
+Text
 
 ## Results
 -----------------------------------------------------------------------------------------------------------------------
