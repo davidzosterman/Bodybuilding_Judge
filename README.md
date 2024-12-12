@@ -29,10 +29,10 @@ The training, validation, and test datasets were created using the ???WHATE NOTE
 - Each pair of competitors added *two* datapoints for each competitor pair, with the order of the competitors as competitor 0 or 1 reversed. This was to prevent the network's two image recognition parts from learning features of different competitors.
 - If two competitors had the same ranking (eg. two competitors with ranking 16 or one competitor paired against himself) then the datapoint was thrown out.
 
-We divided the data into [training](./data/df_train.pkl), [validation](./data/df_val.pkl), and [test](./data/df_test.pkl) sets. To keep the integrity of our validation and test sets, we kept competitions intact and ensured no competitor appeared in more than one of the three sets.
+We divided the data into [training](./data/df_train.pkl), [validation](./data/df_val.pkl), and [test](./data/df_test.pkl) sets, with a split of ???SPLIT OF WHAT???. To keep the integrity of our validation and test sets, we kept competitions intact and ensured no competitor appeared in more than one of the three sets.
 
 ### Data processing
-ADD STUFF ABOUT CHANGING THE IMAGE SIZES
+The photos, originally 600x900, were transformed to 128x128 using `torchvision.transforms.Resize()`.
 
 ## Model
 -----------------------------------------
