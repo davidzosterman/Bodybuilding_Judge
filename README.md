@@ -12,7 +12,7 @@ Nice header image:
     - [Data scraping](#data-scraping)
     - [Data cleaning](#data-cleaning)
     - [Data processing](#data-processing)
-- [Model](#model)
+- [Models](#models)
     - [Original two-input convolutional neural network](#Original-two-input-convolutional-neural-network)
     - [ResNet50](#ResNet50)
 - [Results](#results)
@@ -35,7 +35,7 @@ We divided the data into [training](./data/df_train.pkl), [validation](./data/df
 ### Data processing
 The photos, originally 600x900, were transformed to 128x128 using `torchvision.transforms.Resize()`.
 
-## Model
+## Models
 -----------------------------------------
 We employed two different models, an original two-input convolutional neural network and ResNet50.
 
