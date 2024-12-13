@@ -26,7 +26,11 @@ Data consisted of photos from the [National Physique Committee website](https://
 Note: From now on all .ipynb notebooks were executed in Google Colab unless otherwise specified.
 
 ### Data cleaning
-To reduce training time and needed model complexity, we focused on competitions from the `year` 2024 in the `division` 'Men’s Physique'. Within each competition, each contestant has a variable number of photos. We manually selected two photos, one front and one back, from each contestant using the [data_selection.ipynb](./notebooks/data_selection.ipynb) Jupyter notebook (note that Google Colab did not support the interactive feature of this notebook). Each competition also listed the final `rank` of the competitors from 1 up to 16. If more than 16 competitors were present, all after the first fifteen were tied at 16th place.
+To reduce training time and needed model complexity, we focused on competitions from the `year` 2024 in the `division` 'Men’s Physique'. Within each competition, each contestant has a variable number of photos. We manually selected two photos, one front and one back, from each contestant using the [data_selection.ipynb](./notebooks/data_selection.ipynb) Jupyter notebook (note that Google Colab did not support the interactive feature of this notebook).
+
+The .zip file of all selected photos can be downloaded [here](https://drive.google.com/file/d/18yRchRU_XacUEJ3KXyiWftzwva80FndG/view).
+
+Each competition also listed the final `rank` of the competitors from 1 up to 16. If more than 16 competitors were present, all after the first fifteen were tied at 16th place.
 
 The training, validation, and test datasets were created using the [build_dataset.ipynb](./notebooks/build_dataset.ipynb) notebook. The purpose of our model was to compare an image from each of two competitors and decide a winner. Our dataset input `x` consisted of pairs of two photos, the front-facing photos from two different competitors, and our dataset `y` output consisted of an integer 0 (first competitor wins) or 1 (second competitor wins). Within each competition, we added a datapoint for each pair of competitors, using the rankings within the competition to determine if the winner should be 0 or 1. Two important nuances were:
 - Each pair of competitors added *two* datapoints for each competitor pair, with the order of the competitors as competitor 0 or 1 reversed. This was to prevent the network's two image recognition parts from learning features of different competitors.
