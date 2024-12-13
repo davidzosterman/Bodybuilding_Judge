@@ -1,4 +1,13 @@
-# Bodybuilding_Judge
+# Finding limits of deep learning with bodybuilder image comparison
+--------------------
+Erdos Institute Deep Learning Bootcamp
+
+Fall 2024
+
+- Luke Corwin
+- David Osterman
+- Andrei Prokhorov
+
 --------------------
 
 Creating a two-input convolutional neural network to decide the winner between two bodybuilder photos.
