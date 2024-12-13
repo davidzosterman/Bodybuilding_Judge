@@ -75,4 +75,4 @@ or overfit (training loss function decreased while validation loss function incr
 <img src="./other_images/resnet_overfit.png" alt="ResNet50 Overfit" width="600"/>
 
 ### Potential areas for improvement
-Potential improvements include  investigating the behavior of our models carefully and collecting more data from the NPC website to add more photo pairs. We think it might be useful to train separate network to facilitate photo selection process.
+Potential improvements include  investigating the behavior of our models carefully and collecting more data from the NPC website to add more photo pairs. We think it might be useful to train a separate network to facilitate the photo selection process.
