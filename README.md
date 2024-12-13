@@ -57,10 +57,14 @@ An output less than 0.5 was rounded down to 0 to indicate the first input image 
 
 The network was trained for 20 epochs with 108 workers and a batch size of 256 on an A100 GPU in Google Colab. 
 
+The trained original model can be downloaded [here](https://drive.google.com/file/d/1_qnKVX4ohdMvZKVO0WMq4MzmAM4pqQoc/view).
+
 ### ResNet50-based
 The ResNet50-based model architecture was identical to that of our original model, except that the two sequential image-recognition parts were each replaced with ResNet50.
 
 This network was also trained for 20 epochs with 108 workers and a batch size of 256 on an A100 GPU in Google Colab. 
+
+The trained ResNet50-based model can be downloaded [here](https://drive.google.com/file/d/1XBHO01tiFVEszFWUczfSQ2VqXOcL0s0i/view).
 
 ## Results
 -----------------------------------------------------------------------------------------------------------------------
