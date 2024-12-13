@@ -15,6 +15,7 @@ Creating a two-input convolutional neural network to decide the winner between t
     - [Original two-input convolutional neural network](#Original-two-input-convolutional-neural-network)
     - [ResNet50](#ResNet50)
 - [Results](#results)
+    - [Model results](#model-results)
     - [Potential areas for improvement](#potential-areas-for-improvement)
 
 ## Data Description
@@ -61,6 +62,8 @@ Training was performed for 20 epochs with 108 workers and a batch size of 256.
 
 ## Results
 -----------------------------------------------------------------------------------------------------------------------
+
+### Model results
 We measured the loss and accuracy for the training and validation set for each epoch of training. Despite varying multiple hyperparameters, including learning rate and number of epochs, we were unsuccessful in validating either of the models. In every case, we found that either the model did not learn (training and validation loss functions remained flat)
 
 <img src="./other_images/orig_net_not_training.png" alt="Original Net Not Training" width="600"/>
