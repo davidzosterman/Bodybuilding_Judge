@@ -16,8 +16,6 @@ Nice header image:
     - [Original two-input convolutional neural network](#Original-two-input-convolutional-neural-network)
     - [ResNet50](#ResNet50)
 - [Results](#results)
-    - [Original model results](#original-model-results)
-    - [ResNet50 results](#resnett50-results)
     - [Potential areas for improvement](#potential-areas-for-improvement)
 
 ## Data Description
@@ -64,11 +62,13 @@ Training was performed for 20 epochs with 108 workers and a batch size of 256.
 
 ## Results
 -----------------------------------------------------------------------------------------------------------------------
-### Original model results
-Add text
+We measured the loss and accuracy for the training and validation set for each epoch of training. Despite varying multiple hyperparameters, including learning rate and number of epochs, we were unsuccessful in validating either of the models. In every case, we found that either the model did not learn (training and validation loss functions remained flat)
 
-### ResNet50 results
-Add text
+<img src="./other_images/orig_net_not_training.png" alt="Original Net Not Training" width="600"/>
+
+or overfit (training loss function decreased while validation loss function increased.
+
+<img src="./other_images/resnet_overfit.png" alt="ResNet50 Overfit" width="600"/>
 
 ### Potential areas for improvement
 Add text
