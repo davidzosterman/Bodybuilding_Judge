@@ -13,7 +13,7 @@ Creating a two-input convolutional neural network to decide the winner between t
     - [Data processing](#data-processing)
 - [Models](#models)
     - [Original two-input convolutional neural network](#Original-two-input-convolutional-neural-network)
-    - [ResNet50](#ResNet50)
+    - [ResNet50-based](#ResNet50-based)
 - [Results](#results)
     - [Model results](#model-results)
     - [Potential areas for improvement](#potential-areas-for-improvement)
@@ -43,7 +43,7 @@ The photos, originally 600x900, were transformed to 128x128 using `torchvision.t
 
 ## Models
 -----------------------------------------
-We employed two different models, an original two-input convolutional neural network and ResNet50.
+We employed two different models, an original two-input convolutional neural network and a ResNet50-based network.
 
 ### Original two-input convolutional neural network
 Model creation and training were performed in the [neural_net_tuning_full_data.ipynb](./notebooks/neural_net_tuning_full_data.ipynb) notebook.
@@ -55,10 +55,12 @@ We first created an original model called `TwoInputNet(nn.Module)`, a subclass o
 
 An output less than 0.5 was rounded down to 0 to indicate the first input image was the winner. An output greater than 0.5 was rounded up to 1 to indicate the second input image was the winner.
 
-The network was trained for 20 epochs with 108 workers and a batch size of 256. 
+The network was trained for 20 epochs with 108 workers and a batch size of 256 on an A100 GPU in Google Colab. 
 
-### ResNet50
-???ADD STUFF ABOUT RESNET50???
+### ResNet50-based
+The ResNet50-based model architecture was identical to that of our original model, except that the two sequential image-recognition parts were each replaced with ResNet50.
+
+This network was also trained for 20 epochs with 108 workers and a batch size of 256 on an A100 GPU in Google Colab. 
 
 ## Results
 -----------------------------------------------------------------------------------------------------------------------
