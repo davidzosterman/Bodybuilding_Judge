@@ -16,7 +16,9 @@ Nice header image:
     - [Original two-input convolutional neural network](#Original-two-input-convolutional-neural-network)
     - [ResNet50](#ResNet50)
 - [Results](#results)
-    - [Name_this_section](#name_this_section)
+    - [Original model results](#original-model-results)
+    - [ResNet50 results](#resnett50-results)
+    - [Potential areas for improvement](#potential-areas-for-improvement)
 
 ## Data Description
 -------------------
@@ -62,7 +64,11 @@ Training was performed for 20 epochs with 108 workers and a batch size of 256.
 
 ## Results
 -----------------------------------------------------------------------------------------------------------------------
+### Original model results
 Add text
 
-### Name this section
+### ResNet50 results
+Add text
+
+### Potential areas for improvement
 Add text
