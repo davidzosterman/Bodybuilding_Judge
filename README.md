@@ -3,7 +3,7 @@
 
 Creating a two-input convolutional neural network to decide the winner between two bodybuilder photos.
 
-<img src="./other_images/cover_image.png" alt="Nice Header Plot" width="300"/>
+<img src="./other_images/cover_image.png" alt="Nice Header Plot" width="300"/> <img src="./other_images/cover_image_2.png" alt="Nice Header Plot" width="300"/>
 
 ## Table of Contents
 --------------------
