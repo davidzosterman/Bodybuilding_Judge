@@ -37,7 +37,7 @@ Note: From now on all .ipynb notebooks were executed in Google Colab unless othe
 ### Data cleaning
 To reduce training time and needed model complexity, we focused on competitions from the `year` 2024 in the `division` 'Men’s Physique'. Within each competition, each contestant has a variable number of photos. We manually selected two photos, one front and one back, from each contestant using the [data_selection.ipynb](./notebooks/data_selection.ipynb) Jupyter notebook (note that Google Colab did not support the interactive feature of this notebook).
 
-The .zip file of all selected photos can be downloaded [here](https://drive.google.com/file/d/18yRchRU_XacUEJ3KXyiWftzwva80FndG/view).
+The .zip file of all selected photos can be downloaded [here](https://drive.google.com/file/d/1Wxj8rr-wImTTMaa-HPsHNAoyX4A9fqY0/view?usp=share_link).
 
 Each competition also listed the final `rank` of the competitors from 1 up to 16. If more than 16 competitors were present, all after the first fifteen were tied at 16th place.
 
@@ -70,14 +70,14 @@ An output less than 0.5 was rounded down to 0 to indicate the first input image 
 
 The network was trained for 20 epochs with 108 workers and a batch size of 256 on an A100 GPU in Google Colab. 
 
-The trained original model can be downloaded [here](https://drive.google.com/file/d/1_qnKVX4ohdMvZKVO0WMq4MzmAM4pqQoc/view).
+The trained original model can be downloaded [here](https://drive.google.com/file/d/1DcLbGghLwGnrHvBbwk280H4ggs9Ds-Dx/view?usp=share_link).
 
 ### ResNet50-based
 The ResNet50-based model architecture was identical to that of our original model, except that the two sequential image-recognition parts were each replaced with ResNet50.
 
 This network was also trained for 20 epochs with 108 workers and a batch size of 256 on an A100 GPU in Google Colab. 
 
-The trained ResNet50-based model can be downloaded [here](https://drive.google.com/file/d/1XBHO01tiFVEszFWUczfSQ2VqXOcL0s0i/view).
+The trained ResNet50-based model can be downloaded [here](https://drive.google.com/file/d/1ZE6lOn5-gIh-W04TuSNGLoAE-tnYNFl2/view?usp=share_link).
 
 ## Results
 -----------------------------------------------------------------------------------------------------------------------
